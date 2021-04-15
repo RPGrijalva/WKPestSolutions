@@ -1,0 +1,450 @@
+:root {
+    --color1: #F2F2F2;
+    --color2: #1A4173;
+    --color3: #212121;
+    --color4: #34A6BF;
+    --color5: #BCBDC1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    padding: 15px 0;
+    background-color: var(--color2);
+    z-index: 5;
+    color: var(--color1);
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mobileLinks{
+    visibility: hidden;
+}
+
+.mobileLinkDropdown {
+    position: absolute;
+    right: 45px;
+    visibility: hidden;
+    top: 15px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 0 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 4px;
+    border-radius: 20%;
+}
+
+.navlink a:hover {
+    background-color: var(--color4);
+}
+
+.logo {
+    height: 25px;
+    width: 20px;
+}
+
+#hero {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    align-content: right;
+    min-height: 625px;
+    height: 90vh;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 10vh;
+    background-image: url("https://images.app.lucidpress.com/images/2cf0451e-4411-45e7-92e8-292f8298914a/content");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero p{
+    max-width: 800px; 
+    position: absolute;
+    right: 20px;
+}
+
+section {
+    min-height: 625px;
+}
+
+#hero img {
+    max-width: 30vw;
+    margin: 0 100px;
+}
+
+h1 {
+    justify-self: right;
+    align-self: right;
+    font-size: 2.5em;
+    padding: 10px 0;
+    margin-right: 20px;
+}
+
+p {
+    line-height: 23px;
+    letter-spacing: .5px;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+#section1 {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 60px repeat(12, 1fr) 60px;
+    grid-template-rows:  repeat(7, 1fr);
+    background-color: var(--color4);
+}
+
+#section1 #first-para {
+    grid-column: 3 / span 5;
+    grid-row: 2 / span 2;
+}
+
+#section1 #second-para {
+    grid-column: 3 / span 5;
+    grid-row: 4 / span 2;
+}
+
+
+#section1 #front-img {
+    grid-column: 9 / span 5;
+    grid-row: 1 / span 8;
+    opacity: 60%;
+}
+
+#section1 #back-img {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 8;
+    z-index: 2;
+}
+
+#section1 img {
+    height: 100%;
+    max-width: 100%;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+#section2 {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 60px repeat(12, 1fr) 60px;
+    grid-template-rows:  repeat(7, 1fr);
+    background-color: var(--color2);
+    color: var(--color1);
+    text-align: right;
+}
+
+#section2 #right-side {
+    grid-column: 7/ span 6;
+    grid-row: 2 / span 4;
+}
+
+#section2 .image-container {
+    grid-column: 2 / span 5;
+    grid-row: 1 / span 7;
+}
+
+#section2 .image-container img {
+    object-fit: contain;
+}
+
+#section2 table {
+    grid-column: 7 / span 6;
+    grid-row: 4 / span 3;
+}
+
+#section2 table .left {
+    text-align: left;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+td{
+    width: 25%;
+}
+
+#section3 {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 60px repeat(12, 1fr) 60px;
+    grid-template-rows:  repeat(7, 1fr);
+    background-color: var(--color5);
+}
+
+#section3 .high-desert {
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 2;
+}
+
+#section3 .inland-empire {
+    grid-column: 3 / span 6;
+    grid-row: 5 / span 2;
+}
+
+#section3 h2 {
+    color: var(--color2);
+}
+
+#section3 .image-container {
+    grid-column: 7 / span 8;
+    grid-row: 1 / span 7;
+}
+
+#section3 img {
+    object-fit: contain;
+}
+
+#other-stuff-header ul {
+    margin-left: 2em;
+}
+
+#section4 {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 60px repeat(12, 1fr) 60px;
+    grid-template-rows:  repeat(7, 1fr);
+    background-color: var(--color1);
+    text-align: right;
+}
+
+#section4 #available {
+    grid-column: 10 / span 4;
+    grid-row: 2 / span 4;
+}
+
+#section4 .image-container {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 7;
+}
+
+#section4 h3 {
+    color: var(--color4);
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(7, 14%);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    " . header header header header header heaader "
+    " . email-icon . instagram . phone-icon . "
+    " . email . . . number . "
+    " . . . . . . . ";
+    text-align: center;
+    font-size: 1.5em;
+    background-color: var(--color3);
+    color: var(--color4);
+}
+
+#contact h2 {
+    grid-area: header;
+    align-self: center;
+}
+
+#email-icon {
+    grid-area: email-icon;
+    background-image: url("https://images.app.lucidpress.com/images/1de3cd82-5fc2-463e-ab5b-123966fba813/content");
+    background-size: 195%;
+}
+
+#instagram {
+    grid-area: instagram;
+    background-image: url('https://images.app.lucidpress.com/images/0d81517c-acc7-4312-8413-d6406d090f2c/content');
+    background-size: 105%;
+}
+
+#phone-icon {
+    grid-area: phone-icon;
+    background-image: url('https://images.app.lucidpress.com/images/af840ee2-78af-4d39-9dbe-c7dc994b8cb7/content');
+    background-size: 115%;
+}
+
+.social {
+    border-radius: 50%;
+    background-color: var(--color2);
+    width: 75%;
+    padding-top: 75%;
+    margin-bottom: 20px;
+    align-self: center;
+    justify-self: center;
+    background-position: center;
+}
+
+#phone {
+    grid-area: number;
+}
+
+#email {
+    grid-area: email;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 12.5px
+}
+
+#copyright {
+    padding: 5px 10px;
+    min-height: 0px;
+    background-color: var(--color3);
+    color: var(--color4);
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        order: -1;
+    }
+
+    nav {
+        height: 1em;
+    }
+
+    nav ul li {
+        background-color: var(--color2);
+    }
+
+    #hero {
+        padding-top: 145px;
+        text-align: left;
+        width: auto;
+        max-height: 300px;
+    }
+
+    #hero p{
+        margin: 0 6px;
+    }
+
+    #hero img {
+        max-width: 60vw;
+    }
+
+    .mobileLinkDropdown {
+        visibility: visible;
+    }
+
+    #section1, #section2, #section3, #section4 {
+        grid-template-columns: 6px repeat(4, 1fr) 6px;
+        height: 800px;
+    }
+
+    #section1 #front-img {
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 6;
+    }
+    #section1 #back-img {
+        grid-row: 1 / span 3;
+        grid-column: 3 / span 2;
+    }
+
+    #section1 #first-para {
+        grid-column: 2 / span 4;
+        grid-row: 4 / span 2;
+    }
+
+    #section1 #second-para {
+        grid-column: 2 / span 4;
+        grid-row: 6 / span 2;
+    }
+
+    #section2 {
+        height: 500px;
+    }
+
+    #section2 .image-container {
+        grid-row: 1 / span 2;
+        grid-column: 3 / span 2;
+    }
+
+    #section2 #right-side {
+        grid-row: 3 / span 2;
+        grid-column: 2 / span 4;
+        text-align: center;
+    }
+
+    #section2 table {
+        grid-row: 5 / span 3;
+        grid-column: 2 / span 4;
+    }
+
+    #section3 {
+        height: 500px;
+    }
+
+    #section3 .image-container {
+        grid-row: 1 / span 4;
+        grid-column: 2 / span 4;
+        height: 100%;
+    }
+
+    #section3 .high-desert {
+        grid-row: 5 / span 2;
+        grid-column: 2 / span 3;
+    }
+
+    #section3 .inland-empire {
+        grid-row: 5 / span 2;
+        grid-column: 4 / span 2;
+        text-align: right;
+    }
+
+    #section4 .image-container {
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 56
+    }
+
+    #section4 #available {
+        grid-row: 5 / span 3;
+        grid-column: 2 / span 4;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        " . header header header heaader"
+        " . email-icon instagram phone-icon ."
+        " . number number number ."
+        " . email email  email . ";
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #contact h2 {
+        text-align: center;
+    }
+}

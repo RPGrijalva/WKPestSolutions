@@ -13,6 +13,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Marketing Script";
+    src: url("fonts/Marketing\ Script.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     padding: 0;
@@ -121,6 +127,7 @@ p {
 h2 {
     font-size: 2em;
     padding: 10px 0;
+    font-family: "Marketing Script";
 }
 
 #section1 {

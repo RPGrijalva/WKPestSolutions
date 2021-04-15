@@ -6,6 +6,14 @@
     --color5: #BCBDC1;
 }
 
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("fonts/OpenDyslexic-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -14,16 +22,18 @@
 body {
     background-color: var(--color1);
     color: var(--color3);
+    font-family: "OpenDyslexic";
 }
 
 nav {
     width: 100%;
     position: fixed;
-    padding: 15px 0;
+    padding: 20px 0;
     background-color: var(--color2);
     z-index: 5;
     color: var(--color1);
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 nav ul{

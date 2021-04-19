@@ -3,7 +3,7 @@ const nav = document.querySelector("nav");
 
 let baseHeight;
 function adjustInnerHTML() {
-    if (document.body.clientWidth <= 500) {
+    if (document.body.clientWidth <= 612) {
         if (typeof baseHeight === "undefined") {
             baseHeight = document.querySelector("nav").style.height;
         }

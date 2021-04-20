@@ -87,8 +87,6 @@ nav ul li a {
     text-align: right;
     min-height: 625px;
     height: 100vh;
-    /* margin: 3.0em 0 auto 0; */
-    /* padding-top: 10vh; */
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
     grid-template-rows:  repeat(7, 1fr);
@@ -97,37 +95,12 @@ nav ul li a {
 
 }
 
-#smarter {
-    grid-row: 6 / span 2;
-    grid-column: 5 / span 6;
-}
-
-#BillnTidus {
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    max-width: 100%;
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 12;
-}
-
-#background {
-    position: absolute;
-    z-index: -1;
-    grid-column: 5 / span 10;
-    grid-row: 1 / span 12;
-    height: 100%;
-    max-width: 100%;
-}
-
 section {
     min-height: 625px;
 }
 
 #wk-logo {
-    /* max-width: 30vw; */
     position: absolute;
-    /* margin: 0 100px; */
     grid-row: 2 / span 2;
     grid-column: 9 / span 4;
 }
@@ -162,15 +135,28 @@ h2 {
     grid-template-columns: 60px repeat(12, 1fr) 60px;
     grid-template-rows:  repeat(7, 1fr);
     background-color: var(--color4);
-    color: var(--color1)
+    color: var(--color1);
+    text-align: center;
+}
+
+
+#smarter-container {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 14;
+    display: flex;
+    justify-content: center;
+}
+
+#smarter {
+    max-width: 800px;
+    height: 100%;
 }
 
 #service-options {
     display: flex;
-    grid-row: 1 / span 2;
+    grid-row: 3 / span 2;
     grid-column: 3 / span 10;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 #eco-options{
@@ -178,6 +164,17 @@ h2 {
     background-position: center;
     background-size: contain;
     display: inline-grid;
+}
+
+.circle {
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    border-radius: 50%;
+    height: 165px;
+    width: 165px;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 #eco-options p{
@@ -211,16 +208,6 @@ h2 {
 }
 
 
-.circle {
-    background-color: var(--color1);
-    color: var(--color2);
-    text-align: center;
-    border-radius: 50%;
-    height: 180px;
-    width: 180px;
-    font-weight: bold;
-    font-size: 1.2em;
-}
 
 .circle img {
     object-fit: contain;
@@ -229,7 +216,7 @@ h2 {
 
 #section1 #first-para {
     grid-column: 3 / span 10;
-    grid-row: 4 / span 2;
+    grid-row: 5 / span 2;
 }
 
 #section1 #second-para {
@@ -291,6 +278,8 @@ img {
     font-size: 2.5em;
     color: var(--color4);
     line-height: 178%;
+    -webkit-text-stroke: 1px var(--color1);
+	-webkit-text-fill-color: var(--color4);
 }
 
 table{
@@ -308,6 +297,10 @@ td{
     grid-template-columns: 60px repeat(12, 1fr) 60px;
     grid-template-rows:  repeat(7, 1fr);
     background-color: var(--color5);
+}
+
+#section3 ul {
+    line-height: 1.5em;
 }
 
 #section3 .high-desert {
@@ -388,7 +381,7 @@ td{
     grid-template-areas: 
     " . header header header header header heaader "
     " . email-icon . instagram . phone-icon . "
-    " . email . . . number . "
+    " email email email instatxt . number . "
     " . . . . . . . ";
     text-align: center;
     font-size: 1.5em;
@@ -412,6 +405,10 @@ td{
     background-image: url('9635ca05-013b-4632-9f79-65f4f6f29eaf.png');
     background-size: 135%;
     background-position-x: 80%;
+}
+
+#insta {
+    grid-area: instatxt;
 }
 
 #phone-icon {
@@ -452,7 +449,7 @@ h3 {
 }
 
 @media only screen and (max-width: 950px) {
-    #smarter {
+    #smarter-container {
         grid-row: 7 / span 1;
     } 
 
@@ -489,10 +486,6 @@ h3 {
     #section2 #covid-disinfecting {
         grid-column: 1 / span 14;
     }
-/* 
-    #section4 {
-        line-height: 1.5em !important;
-    } */
 
     #section4 #available1 {
         grid-row: 1 / span 2;
@@ -539,7 +532,7 @@ h3 {
         grid-column: 4 / span 8;
     }
 
-    #hero #smarter {
+    #smarter-container {
         grid-row: 7 /span 1;
         grid-column: 2 / span 12;
     }

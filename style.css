@@ -396,13 +396,13 @@ td{
 
 #email-icon {
     grid-area: email-icon;
-    background-image: url("https://images.app.lucidpress.com/images/1de3cd82-5fc2-463e-ab5b-123966fba813/content");
+    background-image: url("email.jpg");
     background-size: 195%;
 }
 
 #instagram {
     grid-area: instagram;
-    background-image: url('9635ca05-013b-4632-9f79-65f4f6f29eaf.png');
+    background-image: url('instagram.png');
     background-size: 135%;
     background-position-x: 80%;
 }
@@ -413,7 +413,7 @@ td{
 
 #phone-icon {
     grid-area: phone-icon;
-    background-image: url('https://images.app.lucidpress.com/images/af840ee2-78af-4d39-9dbe-c7dc994b8cb7/content');
+    background-image: url('phone.jpg');
     background-size: 115%;
 }
 

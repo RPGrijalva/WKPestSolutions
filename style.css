@@ -149,7 +149,7 @@ h2 {
     font-family: "Marketing Script", Georgia, 'Times New Roman', Times, serif;
 }
 
-#section1 {
+#we-work-smarter {
     height: 50vh;
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
@@ -233,23 +233,23 @@ h2 {
 }
 
 
-#section1 #first-para {
+#we-work-smarter #first-para {
     grid-column: 3 / span 10;
     grid-row: 5 / span 2;
 }
 
-#section1 #second-para {
+#we-work-smarter #second-para {
     grid-column: 3 / span 10;
     grid-row: 6 / span 2;
 }
 
 
-#section1 img {
+#we-work-smarter img {
     height: 100%;
     max-width: 100%;
 }
 
-#section2 {
+#bug-control-services {
     height: 50vh;
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
@@ -260,32 +260,32 @@ h2 {
     padding-top: 80px;
 }
 
-#section2 #right-side {
+#bug-control-services #right-side {
     grid-column: 7/ span 7;
     grid-row: 1 / span 4;
     margin-top: 25px;
 }
 
-#section2 .image-container {
+#bug-control-services .image-container {
     grid-column: 2 / span 5;
     grid-row: 1 / span 6;
 }
 
-#section2 .image-container img {
+#bug-control-services .image-container img {
     object-fit: contain;
 }
 
-#section2 table {
+#bug-control-services table {
     grid-column: 7 / span 7;
     grid-row: 4 / span 3;
 }
 
-#section2 table .left {
+#bug-control-services table .left {
     text-align: left;
 }
 
 
-#section2 #covid-disinfecting {
+#bug-control-services #covid-disinfecting {
     grid-column: 2 / span 12;
     grid-row: 7 / span 1;
     text-align: center;
@@ -305,7 +305,7 @@ td{
     width: 25%;
 }
 
-#section3 {
+#high-desert-locations {
     height: 50vh;
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
@@ -313,30 +313,30 @@ td{
     background-color: var(--color5);
 }
 
-#section3 ul {
+#high-desert-locations ul {
     line-height: 1.5em;
 }
 
-#section3 .high-desert {
+#high-desert-locations .high-desert {
     grid-column: 3 / span 4;
     grid-row: 2 / span 2;
 }
 
-#section3 .inland-empire {
+#high-desert-locations .inland-empire {
     grid-column: 3 / span 6;
     grid-row: 5 / span 2;
 }
 
-#section3 h2 {
+#high-desert-locations h2 {
     color: var(--color2);
 }
 
-#section3 .image-container {
+#high-desert-locations .image-container {
     grid-column: 7 / span 8;
     grid-row: 1 / span 7;
 }
 
-#section3 img {
+#high-desert-locations img {
     object-fit: contain;
     height: 600px;
 }
@@ -345,7 +345,7 @@ td{
     margin-left: 2em;
 }
 
-#section4 {
+#bookings-available {
     height: 50vh;
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
@@ -354,40 +354,40 @@ td{
     text-align: right;
 }
 
-#section4 p {
+#bookings-available p {
     line-height: 3.0em;
 }
 
-#section4 #available1 {
+#bookings-available #available1 {
     grid-column: 10 / span 4;
     grid-row: 2 / span 2;
 }
 
-#section4 #phone-number {
+#bookings-available #phone-number {
     grid-column: 9 / span 6;
     grid-row: 4 / span 1;
     font-size: 2em;
 }
 
-#section4 #available2 {
+#bookings-available #available2 {
     grid-column: 9 / span 5;
     grid-row: 5 / span 3;
 
 }
 
-#section4 .image-container {
+#bookings-available .image-container {
     grid-column: 1 / span 8;
     grid-row: 1 / span 7;
 }
 
-#section4 img {
+#bookings-available img {
     height: 100%;
     width: 1150px;
     max-width: 100%;
     object-fit: cover;
 }
 
-#section4 h3 {
+#bookings-available h3 {
     color: var(--color4);
 }
 
@@ -481,50 +481,50 @@ h3 {
         grid-column: 1 / span 14;
     }
 
-    #section1 #first-para {
+    #we-work-smarter #first-para {
         grid-row: 4 / span 4;
         grid-column: 2 / span 12;
     }
 
-    #section1 #second-para {
+    #we-work-smarter #second-para {
         grid-row: 6 / span 4;
         grid-column: 2 / span 12;
     }
 
 
-    #section2 #right-side {
+    #bug-control-services #right-side {
         grid-row: 1 / span 4;
         grid-column: 6 / span 9;
         margin: 0 15px;
     }
 
-    #section2 .image-container {
+    #bug-control-services .image-container {
         grid-column: 1 / span 5;
     }
 
-    #section2 table {
+    #bug-control-services table {
         grid-row: 4 / span 3;
         grid-column: 6 / span 9;
         margin: 0 15px;
     }
 
-    #section2 #covid-disinfecting {
+    #bug-control-services #covid-disinfecting {
         grid-column: 1 / span 14;
     }
 
-    #section4 #available1 {
+    #bookings-available #available1 {
         grid-row: 1 / span 2;
         grid-column: 10 / span 5;
         margin: 15px;
     }
 
-    #section4 #phone-number {
+    #bookings-available #phone-number {
         grid-row: 3 / span 1;
         grid-column: 9 / span 6;
         margin: 0;
     }
 
-    #section4 #available2 {
+    #bookings-available #available2 {
         grid-row: 4 / span 4;
         grid-column: 9 / span 6;
         margin: 0 15px;
@@ -571,12 +571,12 @@ h3 {
         visibility: visible;
     }
 
-    #section1, #section2, #section3, #section4 {
+    #we-work-smarter, #bug-control-services, #high-desert-locations, #bookings-available {
         grid-template-columns: 6px repeat(4, 1fr) 6px;
         height: 800px;
     }
 
-    #section1 #service-options {
+    #we-work-smarter #service-options {
         grid-column: 2 / span 4;
     }
 
@@ -588,85 +588,85 @@ h3 {
         font-size: 1em;
     }
 
-    #section1 #first-para {
+    #we-work-smarter #first-para {
         grid-column: 2 / span 4;
         grid-row: 3 / span 2;
     }
 
-    #section1 #second-para {
+    #we-work-smarter #second-para {
         grid-column: 2 / span 4;
         grid-row: 5 / span 2;
     }
 
-    #section2 {
+    #bug-control-services {
         height: 900px;
     }
 
-    #section2 .image-container {
+    #bug-control-services .image-container {
         grid-row: 1 / span 2;
         grid-column: 3 / span 2;
     }
 
-    #section2 #right-side {
+    #bug-control-services #right-side {
         grid-row: 3 / span 2;
         grid-column: 2 / span 4;
         text-align: center;
         line-height: 1em;
     }
 
-    #section2 table {
+    #bug-control-services table {
         grid-row: 6 / span 2;
         grid-column: 2 / span 4;
     }
 
-    #section2 #covid-disinfecting {
+    #bug-control-services #covid-disinfecting {
         grid-row: 10 / span 1;
         grid-column: 2 / span 4;
         font-size: 1em;
     }
 
-    #section3 .image-container {
+    #high-desert-locations .image-container {
         grid-row: 1 / span 4;
         grid-column: 2 / span 4;
         height: 100%;
     }
 
-    #section3 .high-desert {
+    #high-desert-locations .high-desert {
         grid-row: 5 / span 3;
         grid-column: 2 / span 3;
     }
 
-    #section3 .inland-empire {
+    #high-desert-locations .inland-empire {
         grid-row: 5 / span 3;
         grid-column: 4 / span 2;
         text-align: right;
     }
 
-    #section3 ul li {
+    #high-desert-locations ul li {
         list-style: none;
     }
 
-    #section4 p{
+    #bookings-available p{
         line-height: 2em;
     }
 
-    #section4 .image-container {
+    #bookings-available .image-container {
         grid-row: 1 / span 3;
         grid-column: 1 / span 6;
     }
 
-    #section4 #available1 {
+    #bookings-available #available1 {
         grid-row: 4 / span 1;
         grid-column: 2 / span 4;
     }
 
-    #section4 #phone-number {
+    #bookings-available #phone-number {
         grid-row: 5 / span 1;
         grid-column: 2 / span 4;
         font-size: 1.5em;
     }
 
-    #section4 #available2 {
+    #bookings-available #available2 {
         grid-row: 6 / span 3;
         grid-column: 2 / span 4;
     }

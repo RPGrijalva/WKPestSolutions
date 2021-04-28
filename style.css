@@ -298,7 +298,7 @@ h2 {
 
 table{
     width: 100%;
-    border-collapse:collapse;
+    border-collapse: separate;
 }
 
 td{
@@ -394,7 +394,7 @@ td{
 #contact {
     display: grid;
     grid-template-columns: repeat(7, 14%);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 25%) 10% 40%;
     grid-template-areas: 
     " . header header header header header heaader "
     " . email-icon . instagram . phone-icon . "
@@ -409,6 +409,11 @@ td{
 #contact h2 {
     grid-area: header;
     align-self: center;
+}
+
+#contact a {
+    text-decoration: none;
+    color: var(--color4);
 }
 
 #email-icon {
@@ -505,7 +510,6 @@ h3 {
     #bug-control-services table {
         grid-row: 4 / span 3;
         grid-column: 6 / span 9;
-        margin: 0 15px;
     }
 
     #bug-control-services #covid-disinfecting {
@@ -674,13 +678,14 @@ h3 {
     #contact {
         display: grid;
         grid-template-columns: repeat(5, 20%);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 3fr) repeat(3, 1fr) 6fr;
         grid-template-areas: 
         " . header header header heaader"
         " . email-icon instagram phone-icon ."
         " . number number number ."
         " . instatxt instatxt instatxt ."
-        " email email email  email email ";
+        " email email email  email email "
+        " . . . . .";
         text-align: center;
         font-size: 1.5em;
     }

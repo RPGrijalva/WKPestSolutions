@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Marketing Script';
+	src: url(../../assets/fonts/MarketingScript.woff2) format('woff2'),
+	url(../../assets/fonts/MarketingScript.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

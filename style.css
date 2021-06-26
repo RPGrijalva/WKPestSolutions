@@ -1,446 +1,556 @@
 :root {
-    --color1: #F2F2F2;
-    --color2: #1A4173;
+    --color1: #f2f2f2;
+    --color2: #1a4173;
+    --color2-dark: #163864;
+    --color2-darker: #122d50;
     --color3: #212121;
-    --color4: #34A6BF;
-    --color5: #BCBDC1;
-}
-
-@font-face {
-    font-family: "OpenDyslexic";
-    src: url("fonts/OpenDyslexic-Regular.otf");
-    font-weight: normal;
+    --color4: #34a6bf;
+    --color5: #bcbdc1;
+  }
+  @font-face {
+    font-family: OpenDyslexic;
+    src: url(fonts/OpenDyslexic-Regular.otf);
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: "Marketing Script";
     src: url("fonts/Marketing\ Script.ttf");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
-
-* {
+  }
+  * {
     padding: 0;
     margin: 0;
-}
-
-body {
+  }
+  body {
     background-color: var(--color1);
     color: var(--color3);
-    font-family: "OpenDyslexic", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-nav {
+    font-family: OpenDyslexic, "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  nav {
     width: 100%;
     position: fixed;
     padding: 1.1em 0;
     background-color: var(--color2);
     z-index: 5;
     color: var(--color1);
-    font-weight: bold;
+    font-weight: 700;
     top: 0;
     line-height: 1em;
-}
-
-nav ul{
+  }
+  nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 15px 0 15px;
-}
-
-#mobileLinks{
+  }
+  #mobileLinks {
     visibility: hidden;
-}
-
-.mobileLinkDropdown {
+  }
+  .mobileLinkDropdown {
     position: absolute;
-    right: 45px;
+    right: 15px;
     visibility: hidden;
-    top: 15px;
-}
-
-nav ul li {
+    top: 10px;
+    height: 32px;
+    width: 32px;
+  }
+  nav ul li {
     list-style: none;
     padding: 0 0 5px 0;
-}
-
-nav ul li a {
+  }
+  nav ul li a {
     text-decoration: none;
     color: inherit;
-    padding: 4px;
-    border-radius: 20%;
-}
-
-.navlink a:hover {
+    padding: 0px 4px;
+    border-radius: 10px;
+  }
+  .navlink a:hover {
     background-color: var(--color4);
-}
- 
-.logo {
+  }
+  .logo {
     height: 25px;
     width: 20px;
-}
-
-img {
+  }
+  img {
     max-width: 100%;
     max-height: 100%;
     height: 800px;
     width: 800px;
-}
-
-#hero {
+  }
+  #hero {
     position: relative;
-    text-align: right;
-    min-height: 625px;
-    height: 100vh;
+    height: 525px;
+    max-height: 525px;
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows:  repeat(7, 1fr);
-    background-image: url("billntidus3-min.png"),url("backgrounc-clear-min.jpg");
-    background-position: left bottom, bottom;
-    background-size: contain, cover;
-    background-repeat: no-repeat;
-
-}
-
-section {
-    min-height: 625px;
-}
-
-#wk-logo {
+    grid-template-rows: repeat(7, 1fr);
+    background-color: var(--color4);
+  }
+  #hero-img {
     position: absolute;
-    grid-row: 2 / span 2;
-    grid-column: 8 / span 5;
-    height: 800px;
-    width: 800px;
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 7;
     max-height: 100%;
     max-width: 100%;
-}
-
-#main-logo {
-    width: 500px;
+    object-fit: cover;
+  }
+  #upper-para {
+    grid-row: 2 / span 2;
+    grid-column: 9 / span 6;
+  }
+  #upper-para img {
+    width: 360px;
+    height: 150px;
+  }
+  #about-us {
+    line-height: 2em;
+    margin: 80px auto 30px auto;
+    width: 800px;
+    font-size: 20px;
+    max-width: 100%;
+  }
+  #bug-spraying {
+    width: 155px;
+    height: 265px;
+    float: left;
+    padding: 5px 15px;
+  }
+  .header-para {
+    line-height: 1.7em;
+    text-align: left;
+    margin: 0 15px;
+    font-size: 14px;
+  }
+  #van-wave {
+    object-fit: cover;
     height: 300px;
-}
-
-#home {
-    position: relative;
-
-}
-
-h1 {
+    width: 600px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #top-contact {
+    grid-row: 4 / span 1;
+    grid-column: 10 / span 3;
+    text-align: center;
+    display: flex;
+    flex-flow: wrap;
+    margin: 37px 0 0 15px;
+  }
+  #customer-portal-button {
+    background-color: var(--color2);
+    border: 2px solid var(--color2-dark);
+  }
+  #customer-portal-button:hover {
+    background-color: var(--color2-dark);
+    border: 2px solid var(--color2-darker);
+  }
+  #customer-portal-button a {
+    text-decoration: none;
+    color: var(--color5);
+  }
+  #contact-buttons {
+    display: flex;
+    width: 100%;
+  }
+  #contact-buttons button {
+    border-radius: 10px;
+    height: 25px;
+    cursor: pointer;
+    padding: 0 3px;
+  }
+  #primary-btn {
+    margin-right: 4.5em;
+  }
+  h1 {
     justify-self: right;
     align-self: right;
-    font-size: 2.5em;
+    font-size: 20px;
     padding: 10px 0;
     margin-right: 20px;
-}
-
-p {
-    line-height: 2em;
-    letter-spacing: .5px;
-}
-
-h2 {
-    font-size: 2em;
+  }
+  p {
+    line-height: 1.9em;
+    letter-spacing: 0.5px;
+    font-family: OpenDyslexic, "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  h2 {
+    font-size: 20px;
     padding: 10px 0;
-    font-family: "Marketing Script", Georgia, 'Times New Roman', Times, serif;
-}
-
-#we-work-smarter {
-    height: 50vh;
+    font-family: "Marketing Script", Georgia, "Times New Roman", Times, serif;
+  }
+  h1,
+  h2 {
+    font-family: OpenDyslexic, "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  #we-work-smarter {
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows:  repeat(7, 1fr);
-    background-color: var(--color4);
+    grid-template-rows: repeat(7, 150px);
+    background-color: var(--color1);
     color: var(--color1);
     text-align: center;
-}
-
-
-#smarter-container {
-    grid-row: 1 / span 2;
+  }
+  #smarter-container {
+    grid-row: 1 / span 1;
     grid-column: 1 / span 14;
-    display: flex;
-    justify-content: center;
-}
-
-#smarter {
-    max-width: 800px;
-    height: 200px;
-    max-height: 100%;
-}
-
-#service-options {
-    display: flex;
-    grid-row: 3 / span 2;
-    grid-column: 3 / span 10;
-    justify-content: space-between;
-}
-
-#eco-options{
-    background-image: url("leaves1-min.png");
-    background-position: center;
-    background-size: contain;
-    display: inline-grid;
-}
-
-.circle {
-    background-color: var(--color1);
-    color: var(--color2);
     text-align: center;
-    border-radius: 50%;
-    height: 165px;
-    width: 165px;
+  }
+  #smarter {
+    height: 50px;
+    width: 250px;
+  }
+  #service-options {
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 6;
+    color: var(--color2);
     font-weight: bold;
-    font-size: 1.2em;
-}
-
-#eco-options p{
+    font-size: 10px;
+  }
+  #map {
+    grid-row: 1 / span 3;
+    grid-column: 9 / span 5;
+    height: 390px;
+    width: 400px;
+    margin: 67px auto;
+  }
+  #services h2 {
+    text-align: right;
+  }
+  #services p {
+    font-size: 0.9em;
+    text-align: right;
+  }
+  #covid-disinfecting {
+    width: 350px;
+  }
+  #instagram-container {
+    grid-row: 5 / span 2;
+    grid-column: 2 / span 3;
+    color: var(--color3);
+    border: 1px solid var(--color3);
+  }
+  #instagram-container img {
+    object-fit: contain;
+  }
+  .insta-img {
+    margin: 0 2px;
+    padding: 0;
+    height: auto;
+    width: 98%;
+  }
+  .insta-txt {
+    font-size: 12px;
+    margin: 0 2px;
+  }
+  #testamonials {
+    grid-row: 6 / span 1;
+    grid-column: 6 / span 8;
+    color: var(--color3);
+    border: 1px solid #000;
+    display: flex;
+  }
+  #testamonials h2 {
+    position: relative;
+  }
+  #testamonials-text {
+    width: 100%;
+  }
+  .star-rating {
+    width: 100%;
+  }
+  .review {
+    display: flex;
+    justify-content: space-around;
+    left: 400px;
+  }
+  #avitar {
+    width: 100px;
+    margin: 0 8px;
+    align-self: center;
+  }
+  .avi {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .testamonial {
+    width: 100%;
+    margin: 0 8px;
+  }
+  #eco-options p {
     align-self: flex-end;
     margin-bottom: 15px;
- }
-
-#commercial {
-    background-image: url("opensign-min.png");
+  }
+  #commercial {
+    background-image: url(opensign-min.png);
     background-position: 50% 10%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#commercial p {
-    margin-top: 15px;
-}
-
-#home {
-    background-image: url("home-min.png");
-    background-position: 0;
-    background-size: contain;
+    background-size: 111%;
+    background-repeat: repeat;
+    border-radius: 12px 12px 0 0;
+  }
+  #commercial p {
+    margin-top: -30px;
+  }
+  #home {
+    background-image: url(home-min.png);
+    background-position: 0 0;
+    background-size: cover;
     background-repeat: no-repeat;
     display: inline-grid;
-}
-
-#home p {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+  }
+  #home p {
     justify-self: flex-start;
     align-self: center;
     margin: 0 0 45px 15px;
-}
-
-.circle img {
+  }
+  .circle img {
     object-fit: contain;
-}
-
-
-#we-work-smarter #first-para {
-    grid-column: 3 / span 10;
-    grid-row: 5 / span 2;
-}
-
-#we-work-smarter #second-para {
-    grid-column: 3 / span 10;
-    grid-row: 6 / span 2;
-}
-
-
-#we-work-smarter img {
-    height: 100%;
-    max-width: 100%;
-}
-
-#bug-control-services {
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows:  repeat(7, 1fr);
-    background-color: var(--color2);
-    color: var(--color1);
-    text-align: right;
-    padding-top: 80px;
-}
-
-#bug-control-services #right-side {
-    grid-column: 7/ span 7;
-    grid-row: 1 / span 4;
-    margin-top: 25px;
-}
-
-#bug-control-services .image-container {
-    grid-column: 2 / span 5;
-    grid-row: 1 / span 6;
-}
-
-#bug-control-services .image-container img {
-    object-fit: contain;
-}
-
-#bug-control-services table {
-    grid-column: 7 / span 7;
-    grid-row: 4 / span 3;
-}
-
-#bug-control-services table .left {
+  }
+  #we-work-smarter #first-para {
+    grid-column: 2 / span 6;
+    grid-row: 1 / span 3;
+    margin-top: 60px;
+    line-height: 2.1em;
+    color: var(--color3);
+    font-size: 0.9em;
+  }
+  #first-para p {
     text-align: left;
-}
-
-
-#bug-control-services #covid-disinfecting {
-    grid-column: 2 / span 12;
-    grid-row: 7 / span 1;
-    text-align: center;
-    font-size: 2.5em;
-    color: var(--color4);
-    line-height: 178%;
-    -webkit-text-stroke: 1px var(--color1);
-	-webkit-text-fill-color: var(--color4);
-}
-
-table{
-    width: 100%;
+  }
+  #services {
+    grid-column: 8 / span 6;
+    grid-row: 4 / span 4;
+    margin-top: 70px;
+    color: var(--color3);
+    filter: gray;
+  }
+  table {
+    width: 350px;
     border-collapse: separate;
-}
-
-td{
+  }
+  td {
     width: 25%;
-}
-
-#high-desert-locations {
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows:  repeat(7, 1fr);
+  }
+  #service-options table tbody tr td,
+  #service-options table thead tr td {
+    height: 78px;
+  }
+  #ants {
+    background-image: url(ants.jpg);
+    background-position: -1px 0;
+    background-size: 109%;
+  }
+  #ants .text {
+    transform: translate(-39%, 93%);
+  }
+  #rats {
+    background-image: url(mouse.jpg);
+    background-position: 0 0;
+    background-repeat: round;
+  }
+  #rats .text {
+    transform: translate(-50%, 34%);
+  }
+  #squirrels {
+    background-image: url(squirrel.jpg);
+    background-position: -12px 0;
+    background-size: 160%;
+  }
+  #squirrels .text {
+    transform: translate(-47%, 90%);
+  }
+  #fleas {
+    background-image: url(tick.jpg);
+    background-position: -24px -1px;
+    background-size: 158%;
+  }
+  #fleas .text {
+    transform: translate(-49%, 22%);
+  }
+  #spiders {
+    background-image: url(spider.jpg);
+    background-position: 0 2px;
+    background-size: 137%;
+  }
+  #spiders .text {
+    transform: translate(-45%, 100%);
+  }
+  #bed-bugs {
+    background-image: url(bedbug.jpg);
+    background-position: -27px 1px;
+    background-size: 152%;
+  }
+  #bed-bugs .text {
+    transform: translate(-45%, 87%);
+  }
+  #gopher {
+    background-image: url(gopher.jpg);
+    background-position: -22px 0;
+    background-size: 162%;
+  }
+  #gopher .text {
+    transform: translate(-47%, 93%);
+  }
+  #drain {
+    background-image: url(drain.jpg);
+    background-position: -5px -15px;
+    background-size: 100%;
+  }
+  #drain .text {
+    transform: translate(-48%, 0);
+  }
+  .text {
+    position: absolute;
+    z-index: 20;
+    opacity: 0;
+  }
+  .services {
+    background-size: cover;
+  }
+  .services:hover .overlay {
+    opacity: 0.7;
     background-color: var(--color5);
+  }
+  .services:hover .text {
+    opacity: 1;
+    transition: 0.5s ease;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 0.5s ease;
+  }
+  .dark {
+    background-color: var(--color2);
+  }
+  .light {
+    background-color: var(--color4);
+  }
+  #covid-disinfecting {
+    width: 300px;
 }
-
-#high-desert-locations ul {
+  #high-desert-locations ul {
     line-height: 1.5em;
-}
-
-#high-desert-locations .high-desert {
-    grid-column: 3 / span 4;
-    grid-row: 2 / span 2;
-}
-
-#high-desert-locations .inland-empire {
-    grid-column: 3 / span 6;
-    grid-row: 5 / span 2;
-}
-
-#high-desert-locations h2 {
+  }
+  .high-desert {
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 2;
+    color: var(--color3);
+    text-align: left;
+  }
+  .inland-empire {
+    grid-column: 11 / span 3;
+    grid-row: 4 / span 2;
+    text-align: right;
+    color: var(--color3);
+  }
+  .high-desert,
+  .inland-empire {
+    font-size: 0.8em;
+  }
+  .high-desert ul li,
+  .inland-empire ul li {
+    list-style: none;
+  }
+  #high-desert-locations h2 {
     color: var(--color2);
-}
-
-#high-desert-locations .image-container {
+  }
+  #high-desert-locations .image-container {
     grid-column: 7 / span 8;
     grid-row: 1 / span 7;
-}
-
-#high-desert-locations img {
+  }
+  #high-desert-locations img {
     object-fit: contain;
     height: 600px;
-}
-
-#other-stuff-header ul {
-    margin-left: 2em;
-}
-
-#bookings-available {
+  }
+  #bookings-available {
     height: 50vh;
     display: grid;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows:  repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     background-color: var(--color1);
     text-align: right;
-}
-
-#bookings-available p {
-    line-height: 3.0em;
-}
-
-#bookings-available #available1 {
-    grid-column: 10 / span 4;
-    grid-row: 2 / span 2;
-}
-
-#bookings-available #phone-number {
+  }
+  #bookings-available p {
+    line-height: 3em;
+  }
+  #available {
+    grid-column: 2 / span 8;
+    grid-row: 13 / span 2;
+    color: var(--color3);
+    text-align: left;
+  }
+  #bookings-available #phone-number {
     grid-column: 9 / span 6;
     grid-row: 4 / span 1;
     font-size: 2em;
-}
-
-#bookings-available #available2 {
+  }
+  #bookings-available #available2 {
     grid-column: 9 / span 5;
     grid-row: 5 / span 3;
-
-}
-
-#bookings-available .image-container {
+  }
+  #bookings-available .image-container {
     grid-column: 1 / span 8;
     grid-row: 1 / span 7;
-}
-
-#bookings-available img {
+  }
+  #bookings-available img {
     height: 100%;
     width: 1150px;
     max-width: 100%;
     object-fit: cover;
-}
-
-#bookings-available h3 {
+  }
+  #bookings-available h3 {
     color: var(--color4);
-}
-
-#contact {
+  }
+  #contact {
     display: grid;
     grid-template-columns: repeat(7, 14%);
     grid-template-rows: repeat(2, 25%) 10% 40%;
-    grid-template-areas: 
-    " . header header header header header heaader "
-    " . email-icon . instagram . phone-icon . "
-    " email email email instatxt number number number "
-    " . . . . . . . ";
+    grid-template-areas: " . header header header header header heaader " " . email-icon . instagram . phone-icon . " " email email email instatxt number number number " " . . . . . . . ";
     text-align: center;
     font-size: 1.5em;
     background-color: var(--color3);
     color: var(--color4);
-}
-
-#contact h2 {
+  }
+  #contact h2 {
     grid-area: header;
     align-self: center;
-}
-
-#contact a {
+  }
+  #contact a {
     text-decoration: none;
     color: var(--color4);
-}
-
-#email-icon {
-
+  }
+  #email-icon {
     grid-area: email-icon;
-    background-image: url("email-min.jpg");
+    background-image: url(email-min.jpg);
     background-size: 195%;
-}
-
-#instagram {
+  }
+  #instagram {
     grid-area: instagram;
-    background-image: url('instagram.png');
+    background-image: url(instagram.png);
     background-size: 135%;
     background-position-x: 80%;
-}
-
-#insta {
+  }
+  #insta {
     grid-area: instatxt;
-}
-
-#phone-icon {
+  }
+  #phone-icon {
     grid-area: phone-icon;
-    background-image: url('phone-min.jpg');
+    background-image: url(phone-min.jpg);
     background-size: 115%;
-}
-
-.social {
+  }
+  .social {
     display: block;
     border-radius: 50%;
     background-color: var(--color2);
@@ -450,247 +560,183 @@ td{
     align-self: center;
     justify-self: center;
     background-position: center;
-}
-
-#phone {
+  }
+  #phone {
     grid-area: number;
-}
-
-#email {
+  }
+  #email {
     grid-area: email;
-}
-
-h3 {
+  }
+  h3 {
     font-size: 1.5em;
-    margin: 12.5px
-}
-
-#copyright {
+    margin: 12.5px 0;
+  }
+  #copyright {
     padding: 5px 10px;
-    min-height: 0px;
+    min-height: 0;
     background-color: var(--color3);
     color: var(--color4);
-}
-
-@media only screen and (max-width: 950px) {
-    #wk-logo {
-        grid-column: 7 / span 9;
+  }
+  @media only screen and (max-width: 950px) {
+    #bill-n-tidus-container {
+      grid-row: 5 / span 3;
     }
-
-    #smarter-container {
-        grid-row: 1 / span 1;
-    } 
-    
+    #services {
+      grid-row: 5 / span 4;
+    }
     #service-options {
-        grid-row: 2 / span 2;
-        grid-column: 1 / span 14;
+      grid-row: 2 / span 3;
+      grid-column: 2 / span 4;
+      margin-top: 20px;
     }
-
-    #we-work-smarter #first-para {
-        grid-row: 4 / span 4;
-        grid-column: 2 / span 12;
+    #service-options table {
+      width: 300px;
     }
-
-    #we-work-smarter #second-para {
-        grid-row: 6 / span 4;
-        grid-column: 2 / span 12;
+    #service-options table tbody tr td,
+    #service-options table thead tr td {
+      height: 78px;
     }
-
-
-    #bug-control-services #right-side {
-        grid-row: 1 / span 4;
-        grid-column: 6 / span 9;
-        margin: 0 15px;
+    #bug-spraying {
+      grid-column: 11 / span 4;
     }
-
-    #bug-control-services .image-container {
-        grid-column: 1 / span 5;
+    #instagram-container {
+      grid-row: 5 / span 3;
+      grid-column: 2 / span 4;
     }
-
-    #bug-control-services table {
-        grid-row: 4 / span 3;
-        grid-column: 6 / span 9;
+    #testamonials {
+      grid-column: 7 / span 7;
+      grid-row: 6 / span 2;
     }
-
-    #bug-control-services #covid-disinfecting {
-        grid-column: 1 / span 14;
-    }
-
-    #bookings-available #available1 {
-        grid-row: 1 / span 2;
-        grid-column: 10 / span 5;
-        margin: 15px;
-    }
-
-    #bookings-available #phone-number {
-        grid-row: 3 / span 1;
-        grid-column: 9 / span 6;
-        margin: 0;
-    }
-
-    #bookings-available #available2 {
-        grid-row: 4 / span 4;
-        grid-column: 9 / span 6;
-        margin: 0 15px;
-    }
-
-    #contact {
-        font-size: 16px;
-
-    }
-
-}
-
-@media only screen and (max-width: 612px) {
+  }
+  @media only screen and (max-width: 612px) {
     .logo {
-        order: -1;
+      order: -1;
     }
-
     nav {
-        height: 1em;
+      height: 1em;
     }
-
     nav ul li {
-        background-color: var(--color2);
+      background-color: var(--color2);
     }
-
-    #hero {
-        padding-top: 145px;
-        text-align: left;
-        width: auto;
-        max-height: 300px;
+    #hero-img {
+      grid-row: 4 / span 2;
+      grid-column: 3 / span 10;
     }
-
-    #wk-logo {
-        grid-row: 2 / span 2;
-        grid-column: 1 / span 14;
+    #upper-para {
+      grid-row: 2 / span 2;
+      grid-column: 3 / span 10;
     }
-
+    #van-wave {
+      height: 150px;
+      width: 400px;
+    }
+    #top-contact {
+      grid-row: 6 / span 1;
+      grid-column: 3 / span 12;
+    }
     #smarter-container {
-        grid-row: 1 /span 1;
-        grid-column: 2 / span 12;
+      grid-row: 1 / span 4;
+      grid-column: 2 / span 12;
     }
-
     .mobileLinkDropdown {
-        visibility: visible;
+      visibility: visible;
     }
-
-    #we-work-smarter, #bug-control-services, #high-desert-locations, #bookings-available {
-        grid-template-columns: 6px repeat(4, 1fr) 6px;
-        height: 800px;
+    #we-work-smarter {
+      grid-template-columns: 6px repeat(12, 1fr) 6px;
+      grid-template-rows: repeat(18, 100px);
+      text-align: left;
     }
-
-    #we-work-smarter #service-options {
-        grid-column: 2 / span 4;
+    p {
+      line-height: 1.7em;
     }
-
     .circle {
-        max-height: 120px;
-        max-width: 120px;
-        height: 30vw;
-        width: 30vw;
-        font-size: 1em;
+      max-height: 120px;
+      max-width: 120px;
+      height: 30vw;
+      width: 30vw;
+      font-size: 1em;
     }
-
     #we-work-smarter #first-para {
-        grid-column: 2 / span 4;
-        grid-row: 3 / span 2;
+      grid-column: 2 / span 12;
+      grid-row: 1 / span 2;
     }
-
-    #we-work-smarter #second-para {
-        grid-column: 2 / span 4;
-        grid-row: 5 / span 2;
+    .text {
+      opacity: 1;
+      font-size: 14px;
+      font-weight: 980;
+      line-height: 1.4em;
     }
-
-    #bug-control-services {
-        height: 900px;
+    #map {
+      grid-row: 4 / span 3;
+      grid-column: 2 / span 12;
     }
-
-    #bug-control-services .image-container {
-        grid-row: 1 / span 2;
-        grid-column: 3 / span 2;
+    .high-desert {
+      grid-row: 8 / span 2;
+      grid-column: 3 / span 6;
+      line-height: 1.7em;
     }
-
-    #bug-control-services #right-side {
-        grid-row: 3 / span 2;
-        grid-column: 2 / span 4;
-        text-align: center;
-        line-height: 1em;
+    .inland-empire {
+      grid-row: 8 / span 2;
+      grid-column: 8 / span 5;
+      line-height: 1.7em;
     }
-
-    #bug-control-services table {
-        grid-row: 6 / span 2;
-        grid-column: 2 / span 4;
+    #services {
+      grid-row: 8 / span 1;
+      grid-column: 2 / span 12;
+      text-align: left;
     }
-
-    #bug-control-services #covid-disinfecting {
-        grid-row: 10 / span 1;
-        grid-column: 2 / span 4;
-        font-size: 1em;
+    #services h2,
+    #services p {
+      text-align: left;
     }
-
-    #high-desert-locations .image-container {
-        grid-row: 1 / span 4;
-        grid-column: 2 / span 4;
-        height: 100%;
+    #commercial p {
+      margin-top: -32px;
     }
-
-    #high-desert-locations .high-desert {
-        grid-row: 5 / span 3;
-        grid-column: 2 / span 3;
+    #service-options {
+      grid-row: 2 / span 3;
+      grid-column: 2 / span 12;
+      margin: 0 auto;
+      font-size: 8px;
+      text-align: left;
     }
-
-    #high-desert-locations .inland-empire {
-        grid-row: 5 / span 3;
-        grid-column: 4 / span 2;
-        text-align: right;
+    #covid-disinfecting {
+      font-size: 12px;
     }
-
-    #high-desert-locations ul li {
-        list-style: none;
+    #instagram-container {
+      grid-row: 10 / span 4;
+      grid-column: 3 / span 10;
     }
-
-    #bookings-available p{
-        line-height: 2em;
+    #testamonials {
+      grid-row: 15 / span 3;
+      grid-column: 3 / span 10;
     }
-
-    #bookings-available .image-container {
-        grid-row: 1 / span 3;
-        grid-column: 1 / span 6;
+    .avi {
+      width: 60px;
+      height: 60px;
     }
-
-    #bookings-available #available1 {
-        grid-row: 4 / span 1;
-        grid-column: 2 / span 4;
+    #avitar {
+      margin: 20px 8px;
+      align-self: start;
     }
-
-    #bookings-available #phone-number {
-        grid-row: 5 / span 1;
-        grid-column: 2 / span 4;
-        font-size: 1.5em;
+    #bill-n-tidus-container {
+      display: none;
     }
-
-    #bookings-available #available2 {
-        grid-row: 6 / span 3;
-        grid-column: 2 / span 4;
+    #available {
+      grid-row: 20 / span 2;
+      grid-column: 2 / span 12;
     }
-
+    #bug-spraying {
+      grid-row: 20 / span 1;
+    }
     #contact {
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-        grid-template-rows: repeat(2, 3fr) repeat(3, 1fr) 6fr;
-        grid-template-areas: 
-        " . header header header heaader"
-        " . email-icon instagram phone-icon ."
-        " . number number number ."
-        " . instatxt instatxt instatxt ."
-        " email email email  email email "
-        " . . . . .";
-        text-align: center;
-        font-size: 1.5em;
+      display: grid;
+      grid-template-columns: repeat(5, 20%);
+      grid-template-rows: repeat(2, 95px) repeat(3, 80px) auto;
+      grid-template-areas: " . header header header heaader" " . email-icon instagram phone-icon ." " . number number number ." " . instatxt instatxt instatxt ." " email email email  email email " " . . . . .";
+      text-align: center;
+      font-size: 1.5em;
     }
-
     #contact h2 {
-        text-align: center;
+      text-align: center;
     }
-}
+  }

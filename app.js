@@ -1,6 +1,8 @@
 const navlink = document.querySelectorAll(".navlink");
 const nav = document.querySelector("nav");
 
+//===================dropdown creation =================================
+
 let baseHeight;
 function adjustInnerHTML() {
     if (document.body.clientWidth <= 612) {
@@ -48,3 +50,20 @@ dropdownCheck.addEventListener("click", () => {
 window.addEventListener("resize", adjustInnerHTML);
 
 adjustInnerHTML();
+
+//========================= carousel function ================================
+
+// const carouselSlide = document.querySelector('#carousel-paras');
+// const carouselPara = document.querySelectorAll('.header-para');
+
+// const prevBtn = document.querySelector('#prev-btn');
+// const nextBtn = document.querySelector('#next-btn');
+
+// let counter = 1;
+// const size = carouselPara[0].clientHeight;
+
+// carouselSlide.style.transform = 'translateY(' + (-size * counter) + 'px)';
+
+// nextBtn.addEventListener('click', ()=> {
+//     carouselSlide.style.transition = "transform 0.4s ease-in-out"
+// });

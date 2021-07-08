@@ -10,9 +10,13 @@
 
 #mainNav {
   background-color: var(--color2) !important;
-  height: 50px;
 }
 
+@media (min-width: 992px) {
+  #mainNav {  
+    height: 50px;
+  }
+}
 @media (max-width: 768px) {
   #van-wave {
     height: 200px;
@@ -81,6 +85,11 @@ button {
   background-color: var(--color4) !important;
 }
 
+.btn-primary {
+  -webkit-text-stroke: 1px var(--color3);
+  text-shadow: 0px 1px 2px var(--color3);
+}
+
 #header-buttons .btn:hover {
   background-color: var(--bs-blue) !important;
 }
@@ -88,7 +97,6 @@ button {
 .service-icon {
   height: 100px;
   width: 100px;
-  /*border-radius: 50%;*/
 }
 
 #about-p {
@@ -127,9 +135,19 @@ button {
   color: var(--color4);
 }
 
+.location {
+  -webkit-text-stroke: 1px var(--color3);
+  text-shadow: 0px 1px 1px var(--color3);
+  font-family: 'Marketing Script';
+}
+
 .locations-list {
   list-style: none;
   margin: 0;
+}
+
+.locations-list li {
+  font-family: 'OpenDyslexic';
 }
 
 #testamonials {
@@ -160,18 +178,8 @@ label {
   border-radius: 50%;
 }
 
-#contact-icons {
-  display: flex;
-  margin: 10px;
-  padding: 0;
-  justify-content: space-around;
-}
-
 #sendMessageButton:hover {
   background-color: var(--bs-blue) !important;
-}
-
-#instagram {
 }
 
 #email {
@@ -204,8 +212,8 @@ button {
 
 .contact-text {
   color: var(--color1);
-  -webkit-text-stroke: 1px var(--color1);
-  text-shadow: 0px 1px 4px var(--color3);
+  /* -webkit-text-stroke: 1px var(--color1);
+  text-shadow: 0px 1px 4px var(--color3); */
   /*letter-spacing: 0.1em;*/
 }
 
@@ -268,13 +276,6 @@ label {
   font-family: 'OpenDyslexic';
 }
 
-#contact-text {
-  display: flex;
-  margin: 10px;
-  padding: 0;
-  justify-content: space-around;
-}
-
 #contact {
   transform-origin: center;
 }
@@ -310,11 +311,20 @@ h2 {
   font-family: 'Marketing Script';
 }
 
-p {
+#footer-contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+} 
+
+#contact-icons, #contact-text {
+  text-align: center;
 }
+
+
 
 #dark-box {
-  background-color: #21212177;
+  background-color: #f2f2f277;
   padding: 20px 0;
 }
-
